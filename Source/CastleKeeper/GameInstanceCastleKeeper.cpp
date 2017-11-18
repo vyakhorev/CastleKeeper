@@ -12,14 +12,14 @@ UGameInstanceCastleKeeper::UGameInstanceCastleKeeper(const FObjectInitializer& O
 
 	/* This part helps to spawn blueprint-based cube. Mind the text link - don't rename the blueprint!
 	We can't move this into Init() call since FObjectFinder is available only in constructor */
-	this->BlockBaseBlueprintClass = (UClass*)ConstructorHelpers::FObjectFinder<UBlueprint>(TEXT("Blueprint'/Game/CastleKeeperLogic/Blueprints/Land/BaseBlock_BP.BaseBlock_BP'")).Object->GeneratedClass;
-	ensure(this->BlockBaseBlueprintClass);
+	/*this->BlockBaseBlueprintClass = (UClass*)ConstructorHelpers::FObjectFinder<UBlueprint>(TEXT("Blueprint'/Game/CastleKeeperLogic/Blueprints/Land/BaseBlock_BP.BaseBlock_BP'")).Object->GeneratedClass;
+	ensure(this->BlockBaseBlueprintClass);*/
 
-	this->MobSpawnerBlueprintClass = (UClass*)ConstructorHelpers::FObjectFinder<UBlueprint>(TEXT("Blueprint'/Game/CastleKeeperLogic/Blueprints/Enemy/MobSpawner.MobSpawner'")).Object->GeneratedClass;
-	ensure(this->MobSpawnerBlueprintClass);
+	/*this->MobSpawnerBlueprintClass = (UClass*)ConstructorHelpers::FObjectFinder<UBlueprint>(TEXT("Blueprint'/Game/CastleKeeperLogic/Blueprints/Enemy/MobSpawner.MobSpawner'")).Object->GeneratedClass;
+	ensure(this->MobSpawnerBlueprintClass);*/
 
-	this->AngryTrollsBlueprintClass = (UClass*)ConstructorHelpers::FObjectFinder<UBlueprint>(TEXT("Blueprint'/Game/CastleKeeperLogic/Blueprints/Enemy/AngryTrolls.AngryTrolls'")).Object->GeneratedClass;
-	ensure(this->AngryTrollsBlueprintClass);
+	/*this->AngryTrollsBlueprintClass = (UClass*)ConstructorHelpers::FObjectFinder<UBlueprint>(TEXT("Blueprint'/Game/CastleKeeperLogic/Blueprints/Enemy/AngryTrolls.AngryTrolls'")).Object->GeneratedClass;
+	ensure(this->AngryTrollsBlueprintClass);*/
 
 }
 
