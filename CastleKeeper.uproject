@@ -8,9 +8,11 @@
 			"Name": "CastleKeeper",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
+      "AdditionalDependencies": [
+        "Engine",
+        "AIModule",
+        "ProceduralMeshComponent"
+      ]
 		}
 	]
 }
